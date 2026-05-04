@@ -109,7 +109,7 @@ Uygulama arka planda çalışır ve `F8` tuşunu dinler. Kullanıcı bir metni s
 Bu projede kullanılan model:
 
 ```text
-gemma2:4b
+gemma3:4b
 ```
 
 Ollama API adresi:
@@ -133,7 +133,7 @@ flowchart TD
     G --> H[Mesaja 3 Cevap Öner]
     H --> I[Seçili metin prompt ile birleştirilir]
     I --> J[Ollama API'ye istek gönderilir]
-    J --> K[gemma2:4b modeli cevap üretir]
+    J --> K[gemma3:4b modeli cevap üretir]
     K --> L[Samimi, resmi ve kısa-net cevaplar oluşturulur]
     L --> M[Cevap metni giriş alanına yapıştırılır]
 ```
@@ -147,7 +147,7 @@ flowchart LR
     A[Seçili mesaj] --> B[F8 menüsü]
     B --> C[Mesaja 3 Cevap Öner]
     C --> D[Prompt hazırlanır]
-    D --> E[Ollama / gemma2:4b]
+    D --> E[Ollama / gemma3:4b]
     E --> F[Samimi cevap]
     E --> G[Resmi cevap]
     E --> H[Kısa ve net cevap]
@@ -181,7 +181,7 @@ Bu projeyi çalıştırmak için aşağıdakiler gerekir:
 
 - Python 3.x
 - Ollama
-- `gemma2:4b` modeli
+- `gemma3:4b` modeli
 - Windows işletim sistemi
 - Gerekli Python paketleri
 
@@ -203,7 +203,7 @@ Bu projeyi çalıştırmak için aşağıdakiler gerekir:
 Önce Ollama üzerinde kullanılacak model kurulmalıdır:
 
 ```bash
-ollama pull gemma2:4b
+ollama pull gemma3:4b
 ```
 
 Modelin yüklendiğini kontrol etmek için:
@@ -215,7 +215,7 @@ ollama list
 Listede şu model görünmelidir:
 
 ```text
-gemma2:4b
+gemma3:4b
 ```
 
 ---
@@ -306,7 +306,7 @@ Gereksiz açıklama ve tekrar yapma.
 Hazırlanan prompt, `requests.post()` ile Ollama API’ye gönderilir.
 
 ```text
-Python → Ollama API → gemma2:4b → Cevap
+Python → Ollama API → gemma3:4b → Cevap
 ```
 
 ---
@@ -365,7 +365,7 @@ ollama list
 Model yoksa tekrar indirin:
 
 ```bash
-ollama pull gemma2:4b
+ollama pull gemma3:4b
 ```
 
 ---
@@ -373,7 +373,7 @@ ollama pull gemma2:4b
 ### Cevap Üretilmiyor
 
 - Ollama servisinin açık olduğundan emin olun.
-- `gemma2:4b` modelinin yüklü olduğunu kontrol edin.
+- `gemma3:4b` modelinin yüklü olduğunu kontrol edin.
 - İnternet gerekmez; model lokal çalışır.
 
 ---
@@ -393,6 +393,6 @@ ollama pull gemma2:4b
 
 Bu proje, günlük mesajlaşmalarda hızlı ve uygun cevap üretmek için hazırlanmış pratik bir masaüstü yapay zekâ yardımcısıdır.
 
-Kullanıcı herhangi bir mesajı seçip `F8` tuşuna bastığında uygulama seçili mesajı alır, Ollama üzerinde çalışan `gemma2:4b` modeline gönderir ve aynı mesaja üç farklı tarzda cevap önerisi üretir.
+Kullanıcı herhangi bir mesajı seçip `F8` tuşuna bastığında uygulama seçili mesajı alır, Ollama üzerinde çalışan `gemma3:4b` modeline gönderir ve aynı mesaja üç farklı tarzda cevap önerisi üretir.
 
 Eklenen **Mesaja 3 Cevap Öner** özelliği, küçük bir kod değişikliğiyle mevcut projeye yeni ve günlük hayatta kullanılabilir bir işlev kazandırmıştır.
