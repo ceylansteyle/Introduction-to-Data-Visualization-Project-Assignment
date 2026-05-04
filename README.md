@@ -60,7 +60,7 @@ Bu özellik özellikle şu durumlarda kullanılabilir:
 
 Aşağıdaki ekran görüntüsünde kullanıcı WhatsApp Web üzerinde bir mesajı seçmiştir. `F8` tuşuna basıldığında uygulamanın işlem menüsü açılmıştır. Menüde yeni eklenen **Mesaja 3 Cevap Öner** seçeneği görünmektedir.
 
-![F8 menüsünde Mesaja 3 Cevap Öner seçeneği](assets/f8-menu.png)
+![F8 Menü](assets/f8-menu-enhanced.png)
 
 ---
 
@@ -68,7 +68,7 @@ Aşağıdaki ekran görüntüsünde kullanıcı WhatsApp Web üzerinde bir mesaj
 
 Kullanıcı mesajı seçip **Mesaja 3 Cevap Öner** işlemini çalıştırdığında uygulama, aynı mesaja üç farklı tarzda cevap üretir.
 
-![Mesaja 3 cevap öner çıktısı](assets/message-output.png)
+![Mesaj Çıktısı](assets/message-output-enhanced.png)
 
 Ekran görüntüsündeki örnek akış:
 
@@ -169,8 +169,8 @@ flowchart LR
 ├── README.md             # Proje açıklama dosyası
 ├── .gitattributes        # Git dosya ayarları
 └── assets/               # README görselleri
-    ├── f8-menu.png
-    └── message-output.png
+    ├── f8-menu-enhanced.png
+    └── message-output-enhanced.png
 ```
 
 ---
